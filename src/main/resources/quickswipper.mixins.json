@@ -1,0 +1,15 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "xyz.bluspring.quickswipper.mixin",
+    "compatibilityLevel": "JAVA_17",
+    "mixins": [
+        "ArmorItemMixin",
+        "ElytraItemMixin"
+    ],
+    "client": [
+    ],
+    "injectors": {
+        "defaultRequire": 1
+  }
+}

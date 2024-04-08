@@ -1,0 +1,32 @@
+{
+    "schemaVersion": 1,
+    "id": "quickswipper",
+    "version": "${version}",
+    "name": "QuickSwipper",
+    "description": "Backports 1.20+'s armor quick switch functionality into 1.19",
+    "authors": [
+        "BluSpring"
+    ],
+    "contact": {
+        "repo": "https://github.com/BluSpring/QuickSwipper"
+    },
+    "license": "MIT",
+    "icon": "assets/quickswipper/icon.png",
+    "environment": "client",
+    "entrypoints": {
+        "client": [
+            "xyz.bluspring.quickswipper.client.QuickSwipperClient"
+        ],
+        "main": [
+            "xyz.bluspring.quickswipper.QuickSwipper"
+        ]
+    },
+    "mixins": [
+        "quickswipper.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.14.14",
+        "fabric": "*",
+        "minecraft": "${minecraft_version}"
+    }
+}
